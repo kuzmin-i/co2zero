@@ -1,5 +1,6 @@
 import ButtonTypeA from '../ButtonTypeA'
 import ButtonTypeB from '../ButtonTypeB'
+import ButtonTypeC from '../ButtonTypeC'
 
 const FilterComponent = ({category, name, type, linkname, listname, data}) => {
     const _button = (<div class="mainfilters__input--list">{ listname }</div>)
@@ -32,7 +33,11 @@ const FilterComponent = ({category, name, type, linkname, listname, data}) => {
         _input = (<input type="text" className="mainfilters__input--text" placeholder={ listname }/>)
     } 
     else if(category == 'small') {
-        _input = (<ButtonTypeB chapters = { _data }/>)
+        if(type == 'dropdownB') {
+            _input = (<ButtonTypeB chapters = { _data }/>)
+        } else {
+            _input = <ButtonTypeC/>
+        }
     } else {
         _input = (<ButtonTypeA chapters = { _data }/>)
     }

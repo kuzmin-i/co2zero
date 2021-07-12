@@ -19,7 +19,7 @@ const ButtonTypeC = ( chapters ) => {
 
   return (
     <div ref={ref}>
-      <Button onClick={handleClick}>Holy guacamole!</Button>
+      <Button onClick={handleClick} bsPrefix="mainfilters__input--list">Emission range</Button>
 
       <Overlay
         show={show}
@@ -33,6 +33,8 @@ const ButtonTypeC = ( chapters ) => {
           <Popover.Content>
           <Form.Control type="range" />
           </Popover.Content>
+          
+
         </Popover>
       </Overlay>
     </div>
