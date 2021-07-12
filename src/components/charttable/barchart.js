@@ -7,7 +7,7 @@ import { ResponsiveBar } from '@nivo/bar'
 const BarChart = ({ data /* see data tab */ }) => (
     <ResponsiveBar
         data={data}
-        keys={[ 'hot dog', 'burger', 'sandwich', 'kebab', 'fries', 'donut' ]}
+        keys={[ 'powerplants', 'refineries', 'chemicals', 'waste', 'metals', 'pedroleum' ]}
         indexBy="country"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.3}
