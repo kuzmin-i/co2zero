@@ -21,7 +21,6 @@ const data = [
 const MapBlock = () => {
 
   const [viewport, setViewport] = useState({
-    style: 'mapbox://styles/mapbox/streets-v11',
     width: '100%',
     height: '100%',
     latitude: 50.209,
